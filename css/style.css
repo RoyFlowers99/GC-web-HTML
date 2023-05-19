@@ -1,0 +1,19 @@
+html {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.header {
+  position: relative;
+  background-color: rgb(160, 160, 227);
+  height: 600px;
+}
+.subheader {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 100px;
+  padding: 1%;
+}
