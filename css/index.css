@@ -16,15 +16,15 @@ body {
   background-color: #1a4478a0;
 }
 header {
-  height: 600px;
+  height: 700px;
   width: auto;
   background-image: url("/../img/landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .hdr-grad {
-  height: 600px;
-  background: rgb(17,45,78);
+  height: 700px;
+  background: rgb(255, 255, 255);
   background: -moz-linear-gradient(180deg, rgba(17,45,78,1) 0%, rgba(0,0,0,0) 100%);
   background: -webkit-linear-gradient(180deg, rgba(17,45,78,1) 0%, rgba(0,0,0,0) 100%);
   background: linear-gradient(180deg, rgba(17,45,78,1) 0%, rgba(0,0,0,0) 100%);
@@ -40,6 +40,12 @@ header {
 }
 .GC-hdr-logo {
   max-height: 150px;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
 }
 nav {
   max-width: 1200px;
@@ -110,7 +116,122 @@ a:active {
   box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.344);
 }
 
-
+main {
+  height: auto;
+}
+.fixed-bridge {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0px;
+  height: 200px;
+  width: auto;
+  background: rgb(92,140,196);
+  background: -moz-linear-gradient(90deg, rgba(92,140,196,1) 0%, rgba(26,69,120,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(92,140,196,1) 0%, rgba(26,69,120,1) 100%);
+  background: linear-gradient(90deg, rgba(92,140,196,1) 0%, #1a4578 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c8cc4",endColorstr="#1a4578",GradientType=1);
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  font-family: 'Lora', serif;
+  color: white;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+.rel {
+  display: flex;
+  justify-content: space-between;
+  height: 500px;
+}
+.section {
+  max-width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  background: -moz-linear-gradient(180deg, rgba(17,45,78,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(17,45,78,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, rgba(17, 45, 78, 0.4) 0%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#112d4e",endColorstr="#000000",GradientType=1);
+}
+.s-text {
+  opacity: 0;
+  transition: all 2.5s;
+  filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  transform: translateX(-5%);
+  padding: 2%;
+}
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  transform: translateX(0%);
+  transform: scale(100%);
+  padding: 2%;
+}
+@media(prefers-reduced-motion) {
+  .s-text {
+    transition: none;
+  }
+}
+.s-hdr {
+  font-family: 'Lora', serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1px;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.55);
+}
+.s-bdy {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+}
+.parallax1, .parallax2, .parallax3 {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  height: 500px;
+  width: 55%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.headerbar {
+  position: sticky;
+  top: 0px;
+  height: 200px;
+  width: auto;
+  background-color: green;
+  margin: none;
+  z-index: 1;
+}
+.parallax1 {
+  background-image: url('../img/caro1.jpg');
+  background-position: 415px 50px;
+}
+.parallax2 {
+  background-image: url('../img/caro2.jpg');
+  background-position: -300px;
+}
+.parallax3 {
+  background-image: url('../img/caro3.jpg');
+  background-position: 200px;
+}
+.center {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  height: 5px;
+  background-color: rgb(230, 230, 230);
+  margin: none;
+  z-index: 0;
+}
 footer {
   position: relative;
   background: rgb(92,140,196);
@@ -128,13 +249,19 @@ footer {
   transform: translate(50%,-50%);
   max-height: 130px;
   max-width: auto;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  cursor: default;
 }
 .copyright {
   position: absolute;
   top:68%;
   right: 50%;
   transform: translate(50%,-50%);
-  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.613);
+  text-shadow: 0px 3px 8px rgba(0, 0, 0, 0.65);
   color: white;
   font-family: 'Lora', serif;
   font-size: 16px;
