@@ -134,6 +134,13 @@ a:active {
   object-fit: cover;
   object-position:left;
 }
+.btm-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
 /*-------------------FOOTER BEGIN----------------*/
 
 footer {
