@@ -12,9 +12,6 @@ body {
   padding: 0px;
   margin: 0px;
 }
-::selection {
-  background-color: #1a4478a0;
-}
 header {
   height: 700px;
   width: auto;
@@ -200,15 +197,6 @@ main {
   width: 55%;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.headerbar {
-  position: sticky;
-  top: 0px;
-  height: 200px;
-  width: auto;
-  background-color: green;
-  margin: none;
-  z-index: 1;
 }
 .parallax1 {
   background-image: url('../img/caro1.jpg');
