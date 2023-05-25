@@ -342,6 +342,10 @@ footer {
   }
 }
 @media screen and (max-width: 470px) {
+  .GC-hdr-logo {
+    width: 100%;
+    height: 100%;
+  }
   .asktext {
     text-align: center;
     padding: 0px 20px;

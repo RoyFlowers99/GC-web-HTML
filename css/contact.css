@@ -334,6 +334,10 @@ footer {
   .GC-ftr-logo {
     width: 90vw;
   }
+  .GC-hdr-logo {
+    width: 100%;
+    height: 100%;
+  }
   .asktext {
     text-align: center;
   }

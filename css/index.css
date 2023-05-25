@@ -155,7 +155,7 @@ main {
 }
 .s-text {
   opacity: 0;
-  transition: all 2.5s;
+  transition: all 2s;
   filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -411,8 +411,12 @@ footer {
 /*---------465x and under ver.------------*/
 @media screen and (max-width: 465px) {
   header {
-    min-height: 80vh;
+    min-height: 90vh;
   }
+  .GC-hdr-logo {
+    height: 100%;
+  }
+
   .fixed-bridge {
     height: 100px;
     text-align: center;
