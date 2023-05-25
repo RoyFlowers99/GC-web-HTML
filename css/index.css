@@ -228,11 +228,8 @@ main {
   height: 150px;
   font-family: 'Montserrat', sans-serif;
 }
-.see-what {
+.see-what, .see-what:visited, .see-what:link {
   font-size: 24px;
-  color: black;
-}
-.see-what:visited {
   color: black;
 }
 footer {
