@@ -72,7 +72,22 @@ a:active {
 }
 
 /*-------------------MAIN BEGIN----------------*/
-
+.asktext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: none;
+  background: rgb(92,140,196);
+  background: -moz-linear-gradient(90deg, rgba(92,140,196,1) 0%, rgba(26,69,120,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(92,140,196,1) 0%, rgba(26,69,120,1) 100%);
+  background: linear-gradient(90deg, rgba(92,140,196,1) 0%, #1a4578 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c8cc4",endColorstr="#1a4578",GradientType=1);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100px;
+  color: white;
+  font-size: 26px;
+}
 .subhdrparabridge {
   display: flex;
   justify-content: center;
@@ -85,7 +100,7 @@ a:active {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3570&q=80);
+  background-image: url(/img/serv/servhdr.avif);
   height: 200px;
   width: auto;
 }
@@ -110,36 +125,68 @@ a:active {
   flex-direction: column;
 }
 .li {
-  margin: 10px;
+  margin: 15px;
   padding: 3%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 350px;
   width: 400px;
   transition: all .5s ease-in-out;
   border: solid;
   border-color: rgb(211, 211, 211);
+  cursor: pointer;
 }
-.li:hover{
+.li:hover {
   transform: scale(107%);
   background-color: #3f71afc1;
   border-color: rgba(255, 255, 255, 0);
   color: white;
-  cursor: pointer;
+}
+.li:hover .img-li {
+  filter: blur(10px) brightness(70%);
+  overflow: hidden;
+}
+.li:hover .serv-desc {
+  opacity: 1;
+}
+.sub-li {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  width: 400px;
+  overflow: hidden;
 }
 .img-li {
   width: 400px;
   border-radius: 10px;
   overflow: hidden;
   object-fit: cover;
-  object-position:left;
+  object-position: left;
+  transition: all .5s ease-in-out;
+}
+.serv-desc {
+  position: absolute;
+  opacity: 0;
+  max-width: 375px;
+  overflow: auto;
+  transition: all ease-out;
 }
 .btm-contact {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 150px;
-  font-family: 'Montserrat', sans-serif;
+  padding: 0px 5%;
+}
+.still-q {
+  color: black;
+  text-align: center;
+}
+.sqa:link, .sqa:visited {
+  color: black;
 }
 /*-------------------FOOTER BEGIN----------------*/
 
@@ -188,4 +235,124 @@ footer {
 .madewithlove:hover {
   transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.31);
+}
+
+@media screen and (max-width: 1320px) {
+  .subheader {
+    padding: 3%;
+    max-height: 400px;
+  }
+  nav {
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .sbhdr-a  {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: right;
+  }
+  .sbhdr-phn {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: right;
+  }
+  .copyright {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 885px) {
+  .li {
+    height: 325px;
+    width: 325px;
+  }
+  .sub-li {
+    width: 99%;
+    height: 210px;
+  }
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px;
+  }
+  .madewithlove {
+    height: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .li {
+    height: 250px;
+    width: 300px;
+    font-size: 22px;
+  }
+  .serv-desc {
+    width: 85%
+  }
+  .GC-hdr-logo {
+    max-height: none;
+    width: 100%;
+  }
+  .subheader {
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    max-height: none;
+  }
+  nav {
+    align-items: center;
+  }
+  .sbhdr-a  {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+    background-color:#ebebeb2d;
+    width: 100%;
+    max-width: none;
+  }
+  .sbhdr-phn {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+    background-color:#ebebeb2d;
+    width: 100%;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .main-services {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+  .li {
+    height: 250px;
+    width: 80vw;
+    font-size: 22px;
+  }
+  .madewithlove {
+    left: 3px;
+    bottom: 3px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .asktext {
+    text-align: center;
+    padding: 0px 20px;
+  }
+  .GC-ftr-logo {
+    width: 90vw;
+  }
+  .madewithlove {
+    width: 99%;
+    height: auto;
+    bottom: 0;
+    left: 1px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .subhdrparabridge {
+    text-align: center;
+  }
 }

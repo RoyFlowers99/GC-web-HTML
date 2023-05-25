@@ -15,7 +15,7 @@ body {
 header {
   height: 700px;
   width: auto;
-  background-image: url("/../img/landing.jpg");
+  background-image: url("../img/landing.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -199,15 +199,15 @@ main {
   background-repeat: no-repeat;
 }
 .parallax1 {
-  background-image: url('../img/caro1.jpg');
+  background-image: url('/img/caro1.jpg');
   background-position: 415px 50px;
 }
 .parallax2 {
-  background-image: url('../img/caro2.jpg');
+  background-image: url('/img/caro2.jpg');
   background-position: -300px;
 }
 .parallax3 {
-  background-image: url('../img/caro3.jpg');
+  background-image: url('/img/caro3.jpg');
   background-position: 200px;
 }
 .center {
@@ -219,6 +219,19 @@ main {
   background-color: rgb(230, 230, 230);
   margin: none;
   z-index: 0;
+}
+.btm-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-family: 'Montserrat', sans-serif;
+}
+.see-what {
+  color: black;
+}
+.see-what:visited {
+  color: black;
 }
 footer {
   position: relative;
@@ -265,4 +278,209 @@ footer {
 .madewithlove:hover {
   transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.31);
+}
+
+/*---------1320x ver.---------*/
+
+@media screen and (max-width: 1320px) {
+  .subheader {
+    padding: 3%;
+    max-height: 400px;
+  }
+  nav {
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .sbhdr-a  {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: right;
+  }
+  .sbhdr-phn {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: right;
+  }
+  .copyright {
+    margin-top: 0;
+  }
+  .parallax1 {
+    background-position: 300px 50px;
+  }
+}
+
+/*----------800x ver.---------*/
+@media screen and (max-width: 800px) {
+  .fixed-bridge {
+    height: 150px;
+    text-align: center;
+    width: auto;
+    font-size: 28px;
+  }
+  .madewithlove {
+    height: 20px;
+  }
+  .parallax1 {
+    background-position: 110px 100px;
+  }
+  .parallax3 {
+    background-position: -50px 80px;
+  }
+}
+/*---------740x ver.------------*/
+@media screen and (max-width: 740px) {
+  header {
+    min-height: 750px;
+  }
+  .GC-hdr-logo {
+    max-height: none;
+    width: 100%;
+  }
+  .subheader {
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    max-height: none;
+  }
+  nav {
+    align-items: center;
+  }
+  .sbhdr-a  {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+    background-color:#3f71af60;
+    width: 100%;
+    max-width: none;
+  }
+  .sbhdr-phn {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+    background-color:#3f71af60;
+    width: 100%;
+    max-width: none;
+  }
+  .hdr-desc {
+    font-size: 26px;
+    backdrop-filter: none;
+    margin: 0px 24px;
+    text-align: center;
+  }
+  .lrn-btn {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    padding: 10px 5px;
+    margin: 15px;
+    font-size: 28px;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
+/*---------630x ver.------------*/
+@media screen and (max-width: 630px) {
+  .parallax1 {
+    background-position: 0px;
+  }
+}
+/*---------555x ver.------------*/
+@media screen and (max-width: 555px) {
+  .s-text {
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  .show {
+    height: 100%;
+    justify-content: space-evenly;
+  }
+  .s-hdr {
+    margin: 0;
+  }
+  .s-bdy {
+    font-size: 22px;
+    margin: 0;
+  }
+  .parallax3 {
+    background-position: -150px 25px;
+  }
+  .madewithlove {
+    left: 1px;
+    bottom: 3px;
+    height: 25px;
+  }
+  .btm-contact {
+    padding: 0px 5%;
+  }
+  .see-what {
+    text-align: center;
+  }
+}
+/*---------465x and under ver.------------*/
+@media screen and (max-width: 465px) {
+  header {
+    min-height: 80vh;
+  }
+  .fixed-bridge {
+    height: 170px;
+    text-align: center;
+    width: auto;
+    font-size: 28px;
+  }
+  .rel {
+    flex-direction: column;
+  }
+  #rel2 {
+    flex-direction: column-reverse;
+  }
+  .section {
+    width: 100%;
+    max-width: none;
+  }
+  .parallax1, .parallax2, .parallax3 {
+    width: auto;
+  }
+  .s-text {
+    padding: 5%;
+  }
+  .show {
+    padding: 5%;
+  }
+  .parallax1 {
+    background-position: -250px;
+  }
+  .parallax3 {
+    background-position: -300px;
+  }
+  .GC-ftr-logo {
+    width: 100%;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .madewithlove {
+    width: 99%;
+    height: auto;
+    bottom: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hdr-desc {
+    font-size: 22px;
+  }
+}
+@media screen and (min-height: 1100px) {
+  .parallax1 {
+    background-position: -100px;
+  }
+  .parallax2 {
+    background-position: -500px;
+  }
+  .parallax3 {
+    background-position: -150px;
+  }
 }

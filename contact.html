@@ -15,8 +15,7 @@
     <meta name="description" content="Quality computer repair and IT support services. Let us uplift and simplify your life today."/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contact.css">
-    <!--<script defer src="../js/contact.js"></script>-->
+    <link rel="stylesheet" href="/css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Lora:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -24,7 +23,7 @@
   <body>
     <header>
       <div class="subheader">
-        <img class="GC-hdr-logo" src="../img/GC Wht Trans.png" alt="Grace Computers: Consider I.T. All Joy"/>
+        <img class="GC-hdr-logo" src="/img/GC Wht Trans.png" alt="Grace Computers: Consider I.T. All Joy"/>
         <nav>
           <a class="sbhdr-a" href="index.html">
             home
@@ -43,13 +42,23 @@
     </header>
     <main>
       <div class="subhdrparabridge">Contact Us</div>
-      <section>
-        <form action="https://formsubmit.co/help@gracecomputers.org" method="POST">
-          <input type="text" name="name" required>
-          <input type="email" name="email" required>
-          <button type="submit">Send</button>
-        </form>
-      </section>
+      <div class="asktext"><p>how can we help you today?</p></div>
+      <div class="centering">
+        <section class="contact-body">
+          <form class="form" action="https://formsubmit.co/help@gracecomputers.org" method="POST">
+            <div class="nameemaildiv">
+              <input class="na-em-inp" type="text" name="name" placeholder="your name" required>
+              <input class="na-em-inp" type="email" name="email" placeholder="your email" required>
+            </div>
+            <textarea class="message" placeholder="your message" name="message" rows="10" required></textarea>
+            <input type="hidden" name="_autoresponse" value="Thank you for reaching out to us here at Grace Computers! We will get back to you as soon as we can.">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_cc" value="calebkeene@icloud.com">
+            <!--input type="hidden" name="_next" value="https://gracecomputers.org/thanks.html"-->
+            <button class="frmbtn" type="submit">send message</button>
+          </form>
+        </section>
+      </div>
     </main>
     <footer>
       <img
@@ -59,10 +68,10 @@
       />
       <img
         class="GC-ftr-logo"
-        src="../img/GC Wht Trans.png"
+        src="/img/GC Wht Trans.png"
         alt="Grace Computers: Consider I.T. All Joy"
       />
-      <p class="copyright">© 2023 Grace Computers | All Rights Reserved</p>
+      <p class="copyright">© 2023 Grace Computers, LLC | All Rights Reserved</p>
     </footer>
   </body>
 </html>

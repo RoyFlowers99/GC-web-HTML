@@ -5,7 +5,6 @@ html {
 body {
   padding: 0px;
   margin: 0px;
-  height: 2000px;
 }
 
 
@@ -85,11 +84,91 @@ a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-image: url(https://images.unsplash.com/photo-1559163387-e46e8dcb27f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80);
+  background-image: url(/img/cont1.avif);
   height: 200px;
   width: auto;
 }
-
+.asktext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: none;
+  background: rgb(92,140,196);
+  background: -moz-linear-gradient(90deg, rgba(92,140,196,1) 0%, rgba(26,69,120,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(92,140,196,1) 0%, rgba(26,69,120,1) 100%);
+  background: linear-gradient(90deg, rgba(92,140,196,1) 0%, #1a4578 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c8cc4",endColorstr="#1a4578",GradientType=1);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100px;
+  color: white;
+  font-size: 26px;
+}
+.centering {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-body {
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  min-width: 1000px;
+  box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.nameemaildiv {
+  padding: 0px 20px 20px 20px;
+}
+.na-em-inp {
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  border-radius: 0px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  margin: 0px 10px;
+  text-align: center;
+  width: 400px;
+}
+.message {
+  font-family: 'Montserrat', sans-serif;
+  width: 95%;
+  resize: none;
+  margin-bottom: 20px;
+  border: none;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.message::placeholder {
+  padding: 5px;
+  text-align: center;
+}
+.frmbtn {
+  border: none;
+  background-color: #1a44782a;
+  box-shadow:  -5px 5px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+  width: 40%;
+  transition: all .6s ease-in-out;
+  padding: 10px;
+}
+.frmbtn:hover {
+  transform: scale(1.05);
+  box-shadow: -9px 9px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+/*-----------------footer begin--------------------*/
 footer {
   position: relative;
   background: rgb(92,140,196);
@@ -135,4 +214,127 @@ footer {
 .madewithlove:hover {
   transform: scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.31);
+}
+
+@media screen and (max-width: 1320px) {
+  .subheader {
+    padding: 3%;
+    max-height: 400px;
+  }
+  nav {
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .sbhdr-a  {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: right;
+  }
+  .sbhdr-phn {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: right;
+  }
+  .copyright {
+    margin-top: 0;
+  }
+  .contact-body{
+    width: 80vw;
+  }
+  .form {
+    min-width: 0;
+    width: 75vw;
+  }
+  .nameemaildiv {
+    width: 80vw;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .na-em-inp {
+    width: 30vw;
+  }
+  .message {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .madewithlove {
+    height: 20px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .GC-hdr-logo {
+    max-height: none;
+    width: 100%;
+  }
+  .subheader {
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    max-height: none;
+  }
+  nav {
+    align-items: center;
+  }
+  .sbhdr-a  {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+    background-color:#ebebeb2d;
+    width: 100%;
+    max-width: none;
+  }
+  .sbhdr-phn {
+    font-size: 28px;
+    margin: 5px;
+    text-align: center;
+    background-color:#ebebeb2d;
+    width: 100%;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 680px) {
+  .nameemaildiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .na-em-inp {
+    width: 80%;
+  }
+  .message {
+    width: 80vw;
+  }
+  .frmbtn {
+    width: 60%;
+  }
+  .copyright {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 470px) {
+  .GC-ftr-logo {
+    width: 90vw;
+  }
+  .asktext {
+    text-align: center;
+  }
+  .madewithlove {
+    width: 99%;
+    height: auto;
+    bottom: 0;
+    left: 1px
+  }
+}
+@media screen and (max-width: 300px) {
+  .subhdrparabridge {
+    text-align: center;
+  }
+  .frmbtn {
+    width: 80%;
+  }
 }
