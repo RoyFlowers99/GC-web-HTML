@@ -416,7 +416,9 @@ footer {
   .GC-hdr-logo {
     height: 100%;
   }
-
+  main {
+    margin-top: 35px;
+  }
   .fixed-bridge {
     height: 100px;
     text-align: center;
