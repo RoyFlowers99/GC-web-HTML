@@ -5,6 +5,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
+  -webkit-text-size-adjust: 100%;
 }
 
 
@@ -100,7 +101,7 @@ a:active {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(/img/serv/servhdr.avif);
+  background-image: url(../img/serv/servhdr.avif);
   height: 200px;
   width: auto;
 }
@@ -125,6 +126,7 @@ a:active {
   flex-direction: column;
 }
 .li {
+  font-size: 24px;
   margin: 15px;
   padding: 3%;
   display: flex;
@@ -182,6 +184,8 @@ a:active {
   padding: 0px 5%;
 }
 .still-q {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
   color: black;
   text-align: center;
 }

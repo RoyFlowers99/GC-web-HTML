@@ -11,6 +11,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
+  -webkit-text-size-adjust: 100%;
 }
 header {
   height: 700px;
@@ -199,15 +200,15 @@ main {
   background-repeat: no-repeat;
 }
 .parallax1 {
-  background-image: url('/img/caro1.jpg');
+  background-image: url('../img/caro1.jpg');
   background-position: 415px 50px;
 }
 .parallax2 {
-  background-image: url('/img/caro2.jpg');
+  background-image: url('../img/caro2.jpg');
   background-position: -300px;
 }
 .parallax3 {
-  background-image: url('/img/caro3.jpg');
+  background-image: url('../img/caro3.jpg');
   background-position: 200px;
 }
 .center {
@@ -228,6 +229,7 @@ main {
   font-family: 'Montserrat', sans-serif;
 }
 .see-what {
+  font-size: 24px;
   color: black;
 }
 .see-what:visited {

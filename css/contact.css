@@ -5,6 +5,7 @@ html {
 body {
   padding: 0px;
   margin: 0px;
+  -webkit-text-size-adjust: 100%;
 }
 
 
@@ -84,7 +85,7 @@ a:active {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  background-image: url(/img/cont1.avif);
+  background-image: url(../img/cont1.avif);
   height: 200px;
   width: auto;
 }
@@ -140,8 +141,10 @@ a:active {
   margin: 0px 10px;
   text-align: center;
   width: 400px;
+  font-size: 22px;
 }
 .message {
+  font-size: 22px;
   font-family: 'Montserrat', sans-serif;
   width: 95%;
   resize: none;
@@ -151,10 +154,12 @@ a:active {
   padding: 20px;
 }
 .message::placeholder {
+  font-size: 22px;
   padding: 5px;
   text-align: center;
 }
 .frmbtn {
+  font-size: 21px;
   border: none;
   background-color: #1a44782a;
   box-shadow:  -5px 5px 10px rgba(0, 0, 0, 0.1);
