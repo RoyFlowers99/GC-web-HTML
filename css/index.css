@@ -16,7 +16,7 @@ body {
 header {
   height: 700px;
   width: auto;
-  background-image: url("../img/landing.avif");
+  background-image: url("../img/landing.webp");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -200,15 +200,15 @@ main {
   background-repeat: no-repeat;
 }
 .parallax1 {
-  background-image: url('../img/caro1.avif');
+  background-image: url('../img/caro1.webp');
   background-position: 415px 50px;
 }
 .parallax2 {
-  background-image: url('../img/caro2.avif');
+  background-image: url('../img/caro2.webp');
   background-position: -300px;
 }
 .parallax3 {
-  background-image: url('../img/caro3.avif');
+  background-image: url('../img/caro3.webp');
   background-position: 200px;
 }
 .center {

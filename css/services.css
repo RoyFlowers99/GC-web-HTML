@@ -101,7 +101,7 @@ a:active {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/serv/servhdr.avif);
+  background-image: url(../img/serv/servhdr.webp);
   height: 200px;
   width: auto;
 }
